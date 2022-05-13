@@ -19,9 +19,9 @@ def print_matrix(Matrix, matrix_name, timetime):
         print()
 print("\n-------Результат работы программы-------")
 try:
-    matrix_size = int(input("Введите количество строк (столбцов) квадратной матрицы больше 6 : "))
-    while matrix_size < 6 or matrix_size > 100:
-        matrix_size = int(input("Вы ввели неверное число\nВведите количество строк (столбцов) квадратной матрицы больше 6 :"))
+    matrix_size = int(input("Введите количество строк (столбцов) квадратной матрицы больше 4 : "))
+    while matrix_size < 4 or matrix_size > 100:
+        matrix_size = int(input("Вы ввели неверное число\nВведите количество строк (столбцов) квадратной матрицы больше 4 :"))
     K = int(input("Введите число К="))
     start = time.time()
     A = np.zeros((matrix_size, matrix_size))
